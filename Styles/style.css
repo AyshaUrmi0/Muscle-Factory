@@ -148,6 +148,36 @@ body {
     border-radius: 50%;
 }
 
+.run-extra{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-top: 3.5rem;
+    flex-direction: start;
+    background: #222222;
+    border-radius: 20px;
+}
+.run-extra p{
+    color: rgba(255, 255, 255, 0.50);
+   margin-bottom: 30px;
+   
+}
+.run-extra h2{
+    color: #FFF;
+}
+.run-text,.run-image{
+    width: 45%;
+    padding: 20px 20px;
+    gap: 1.5rem;
+
+
+}
+
+.run-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 @media (max-width: 576px) {
     .navbar {
         flex-direction: column;
