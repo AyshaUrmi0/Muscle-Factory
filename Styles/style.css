@@ -67,7 +67,8 @@ body {
 .main-content {
     display: flex;
     justify-content: space-between;
-    height: 715px;
+    padding: 60px 0;
+  
 }
 
 .main-content-text, .main-content-img {
@@ -126,6 +127,27 @@ body {
     color: #E6533C;
 }
 
+.change-habit {
+    margin-top: 3.5rem;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.change-habit-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.5rem;
+    margin-top: 3.5rem;
+   
+   
+}
+
+.change-habit-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
 @media (max-width: 576px) {
     .navbar {
         flex-direction: column;
@@ -147,5 +169,15 @@ body {
 
     .main-content-img {
         margin-top: 20px;
+    }
+
+    .change-habit-text{
+        margin-top: 3.5rem;
+
+    }
+
+    .change-habit-img{
+       
+        grid-template-columns: repeat(1, 1fr);
     }
 }
