@@ -149,28 +149,33 @@ body {
 }
 
 .run-extra{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-    margin-top: 3.5rem;
-    flex-direction: start;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+    gap: 3.5rem;
+    text-align: start;
+   margin-top: 3.5rem;
     background: #222222;
     border-radius: 20px;
+   padding: 20px 20px; 
 }
+
+.run-extra-text, .run-extra-image{
+    width: 40%;
+}
+
 .run-extra p{
     color: rgba(255, 255, 255, 0.50);
    margin-bottom: 30px;
+   line-height: 30px;
+   font-weight: 400;
    
 }
 .run-extra h2{
     color: #FFF;
-}
-.run-text,.run-image{
-    width: 45%;
-    padding: 20px 20px;
-    gap: 1.5rem;
-
-
+    line-height: 120%;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .run-image img{
@@ -210,4 +215,24 @@ body {
        
         grid-template-columns: repeat(1, 1fr);
     }
+    .run-extra {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .btn-primary {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px; 
+        box-sizing: border-box; 
+        margin: 0; 
+    }
+
+    .run-text, .run-image {
+        width: 100%; 
+       
+        
+    }
+
 }
