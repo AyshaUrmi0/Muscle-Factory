@@ -11,22 +11,28 @@ body {
     color: white;
 }
 
-.title {
+
+
+/* nav style starts here */
+
+.title, .footer-left h2 {
     color: #E6533C;
     font-style: italic;
     font-size: 26px;
     border-radius: 20px;
 }
 
+
 .primary-color, .btn-primary {
     color: white;
     background-color: #E6533C;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 20px;
     text-decoration: none;
     
 }
+
 .btn-primary-download{
     color: white;
     border: 1px solid white;
@@ -76,7 +82,7 @@ body {
 }
 
 
-
+/* banner style starts here */
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -139,7 +145,7 @@ body {
     font-size: 24px;
     color: #E6533C;
 }
-
+ /* change habit style starts here */
 .change-habit {
     margin-top: 3.5rem;
     text-align: center;
@@ -161,11 +167,13 @@ body {
     border-radius: 50%;
 }
 
+/* run extra style starts here */
+
 .run-extra{
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
-    gap: 3.5rem;
+    gap: 6.5rem;
     text-align: start;
    margin-top: 3.5rem;
     background: #222222;
@@ -196,6 +204,72 @@ body {
     height: auto;
     border-radius: 10px;
 }
+
+/* footer style starts here */
+
+footer {
+    background: rgba(255, 255, 255, 0.10);
+    padding: 50px 40px; 
+    margin-top: 3.5rem;
+    backdrop-filter: blur(10px);
+    color: #b5b5b5;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; /* Align items to the top for better spacing */
+    gap: 5.5rem; /* Increased gap between columns */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left h2 {
+    color: #e7543b;
+    font-size: 28px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #b5b5b5;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #e7543b;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #b5b5b5;
+}
+
+
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -223,14 +297,17 @@ body {
         margin-top: 20px;
     }
 
+   
     .change-habit-text{
         margin-top: 3.5rem;
+        padding: 40px 40px;
 
     }
 
     .change-habit-img{
        
         grid-template-columns: repeat(1, 1fr);
+        padding: 40px 40px;
     }
     .run-extra {
         flex-direction: column;
@@ -252,4 +329,12 @@ body {
         
     }
 
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px; }
+
+    .footer-right {
+        flex-direction: column; 
+        gap: 40px; 
+    }
 }
