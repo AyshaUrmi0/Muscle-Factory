@@ -27,6 +27,14 @@ body {
     text-decoration: none;
     
 }
+.btn-primary-download{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
 
 
 .container {
@@ -60,6 +68,11 @@ body {
     color: white;
     background-color: rgb(0, 6, 11);
     text-decoration: none;
+    font-weight: 200;
+}
+
+.nav-bar{
+    display: none;
 }
 
 
@@ -185,17 +198,21 @@ body {
 }
 @media (max-width: 576px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
     }
 
+    .nav-bar{
+        display: block;
+    }
+    
+
     .nav-btn {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
 
     .main-content {
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
 
     .main-content-text, .main-content-img {
@@ -220,7 +237,7 @@ body {
         align-items: center;
 
     }
-    .btn-primary {
+    .btn-primary, .btn-primary-download {
         width: 100%;
         display: block;
         text-align: center;
