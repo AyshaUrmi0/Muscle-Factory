@@ -146,7 +146,7 @@ body {
     color: #E6533C;
 }
  /* change habit style starts here */
-.change-habit {
+.change-habit, .meet-text{
     margin-top: 3.5rem;
     text-align: center;
     padding: 40px 40px;
@@ -205,6 +205,50 @@ body {
     border-radius: 10px;
 }
 
+
+/* meet style starts here */
+.meet-team img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 18px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+
+}
+.row-1,.row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+   
+}
+
+.meet-card{
+    position: relative;
+}
+
+.member-card{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+ 
+}
+
+/* Updated meet-card style */
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+ .member-card h3 ,p{
+    margin: 5px 0;
+} 
+
+
 /* footer style starts here */
 
 footer {
@@ -213,15 +257,17 @@ footer {
     margin-top: 3.5rem;
     backdrop-filter: blur(10px);
     color: #b5b5b5;
+    
 }
 
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center; /* Align items to the top for better spacing */
-    gap: 5.5rem; /* Increased gap between columns */
+    align-items: center; 
+    gap: 8rem; 
     max-width: 1200px;
     margin: 0 auto;
+  
 }
 
 .footer-left h2 {
@@ -231,7 +277,7 @@ footer {
 
 .footer-right {
     display: flex;
-    gap: 60px;
+    gap: 3rem;
 }
 
 .footer-column h3 {
@@ -327,6 +373,11 @@ footer {
         width: 100%; 
        
         
+    }
+
+    .row-1, .row-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px; 
     }
 
     .footer-container {
