@@ -11,8 +11,6 @@ body {
     color: white;
 }
 
-
-
 /* nav style starts here */
 
 .title, .footer-left h2 {
@@ -22,7 +20,6 @@ body {
     border-radius: 20px;
 }
 
-
 .primary-color, .btn-primary {
     color: white;
     background-color: #E6533C;
@@ -30,18 +27,15 @@ body {
     padding: 10px 40px;
     border-radius: 20px;
     text-decoration: none;
-    
 }
 
-.btn-primary-download{
+.btn-primary-download {
     color: white;
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
-
 }
-
 
 .container {
     max-width: 1440px;
@@ -57,8 +51,8 @@ body {
     text-align: center;
 }
 
-.primary-color-home{
-   background-color: #E6533C;
+.primary-color-home {
+    background-color: #E6533C;
     color: white;
     border: none;
     text-decoration: none;
@@ -77,46 +71,51 @@ body {
     font-weight: 200;
 }
 
-.nav-bar{
+.nav-bar {
     display: none;
 }
-
 
 /* banner style starts here */
 .main-content {
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
-    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
-  
+    background-image:  linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);;
 }
 
 .main-content-text, .main-content-img {
     width: 50%;
+    height: auto;
 }
 
 .main-content-text h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    line-height: 120%;
+  
 }
 
 .main-content-text h1 span {
-    font-family: cedarville cursive;
+    font-family: 'Cedarville Cursive', cursive;
     color: white;
+    line-height: 120%;
 }
 
 .main-content-text p {
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 150%;
 }
 
 .buttons {
     display: flex;
     gap: 10px;
 }
+
 .main-content-img {
     position: relative;
     width: 50%;
+    
 }
 
 .main-content-img img {
@@ -146,43 +145,37 @@ body {
 
 .stat-1 {
     position: absolute;
-    top: 25%;  
+    top: 25%;
     left: 60%;
-    
 }
 
 .stat-2 {
     position: absolute;
-    bottom: 10%;  
-    left: 7%; 
+    bottom: 10%;
+    left: 7%;
 }
 
-.stats span{
-   font-weight: bold;
+.stats span {
+    font-weight: bold;
 }
 
-.stats p{
-   font-weight: 200;
-   font-size: 13px;
+.stats p {
+    font-weight: 200;
+    font-size: 13px;
 }
 
-
-
-
- /* change habit style starts here */
-.change-habit, .meet-text{
+/* change habit style starts here */
+.change-habit, .meet-text {
     margin-top: 1.5rem;
     text-align: center;
     padding: 40px 40px;
 }
 
-.change-habit-img{
+.change-habit-img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
     margin-top: 3.5rem;
-   
-   
 }
 
 .change-habit-img img {
@@ -191,82 +184,107 @@ body {
     border-radius: 50%;
 }
 
-/* Existing styles */
-
 /* BMI Calculator styles start here */
-.bmi-main{
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+
+
+.bmi-calculator-section {
+    padding: 40px 20px;
+    max-width: 1440px;
+}
+
+.bmi-calculator-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bmi-calculator-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bmi-calculator-header p {
+    font-size: 14px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.50);
+
+
+}
+
+.bmi-calculator-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 40px 0;
+    align-items: flex-start;
+    gap: 40px;
     background: #222;
-    gap: 2rem;
-    width: 100%;
 }
 
-.bmi-calculator-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #222222;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 2rem;
-}
-
-.bmi-chart, .bmi-calculator {
-    width: 40%;
+.bmi-calculator-chart,
+.bmi-calculator-form {
+    flex: 1;
+    background-color: #222;
     padding: 20px;
     border-radius: 8px;
 }
 
-.bmi-chart h2, .bmi-calculator h2 {
-    margin-bottom: 20px;
-    color: #E6533C;
-}
-
-.bmi-calculator p {
-    color: rgba(255, 255, 255, 0.7);
+.bmi-calculator-chart h2,
+.bmi-calculator-form h2 {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-table {
+.bmi-calculator-chart table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
-th, td {
-    padding: 10px;
+.bmi-calculator-chart table th,
+.bmi-calculator-chart table td {
+    padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #555;
+    border: 1px solid #333;
 }
 
-form {
+.bmi-calculator-chart table th {
+    font-weight: bold;
+    color: #aaa;
+}
+
+.bmi-calculator-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.50);
+
+
+}
+
+.bmi-calculator-form form {
     display: flex;
     flex-direction: column;
 }
 
-input, select {
+.bmi-calculator-form .form-group {
+    display: flex;
+    gap: 20px;
     margin-bottom: 15px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
 }
 
-button {
-    padding: 15px;
-    background-color: #E6533C;
+.bmi-calculator-form input,
+.bmi-calculator-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
     border: none;
-    border-radius: 5px;
+    background-color: #333;
     color: #fff;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #d53a2d;
 }
 
 
@@ -274,130 +292,106 @@ button:hover {
 
 
 /* run extra style starts here */
-
-.run-extra{
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
+.run-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 6.5rem;
     text-align: start;
-   margin-top: 3.5rem;
+    margin-top: 3.5rem;
     background: #222222;
     border-radius: 20px;
-   padding: 20px 20px; 
+    padding: 20px 20px;
 }
 
-.run-extra-text, .run-extra-image{
+.run-text, .run-image {
     width: 40%;
 }
 
-.run-extra p{
+.run-extra p {
     color: rgba(255, 255, 255, 0.50);
-   margin-bottom: 30px;
-   line-height: 30px;
-   font-weight: 400;
-   
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-weight: 400;
 }
-.run-extra h2{
+
+.run-extra h2 {
     color: #FFF;
     line-height: 120%;
     font-size: 3rem;
     font-weight: 900;
 }
 
-.run-image img{
+.run-image img {
     width: 100%;
- border-radius: 10px;
- object-fit: none;
- object-position: 65% 28%;
-
+    border-radius: 10px;
+    object-fit: none;
+    object-position: 65% 28%;
 }
 
-/* BMI Calculator style starts here */
-
-    .bmi-calculator-container {
-        flex-direction: column;
-    }
-
-    .bmi-chart, .bmi-calculator {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-
-
 /* meet style starts here */
-.meet-team img{
+.meet-team img {
     width: 100%;
     height: 300px;
     display: block;
     object-fit: cover;
     border-radius: 18px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
-
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
 }
 
-.meet-team-cards{
-
+.meet-team-cards {
     background: rgba(255, 255, 255, 0.10);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 10px 10px;
 }
-.row-1,.row-2{
+
+.row-1, .row-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 20px 20px;
 }
 
-.meet-card{
+.meet-card {
     position: relative;
 }
 
-.member-card{
+.member-card {
     position: absolute;
     bottom: 10px;
     left: 10px;
     text-align: left;
- 
-}
-
-/* Updated meet-card style */
-.member-card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
 }
 
- .member-card h3 ,p{
+.member-card h3, .member-card p {
     margin: 5px 0;
-} 
-.member-card p{
+}
+
+.member-card p {
     color: rgba(255, 255, 255, 0.591);
     font-weight: 400;
 }
 
-
 /* footer style starts here */
-
 footer {
     background: rgba(255, 255, 255, 0.10);
-    padding: 60px 40px; 
+    padding: 60px 40px;
     margin-top: 3.5rem;
     backdrop-filter: blur(10px);
     color: #b5b5b5;
-    
 }
 
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center; 
-    gap: 8rem; 
+    align-items: center;
+    gap: 8rem;
     margin-top: 3.5rem;
-  
 }
 
 .footer-left h2 {
@@ -429,23 +423,33 @@ footer {
 .footer-column ul li a {
     text-decoration: none;
     color: #b5b5b5;
-    font-size: 14px;
-    transition: color 0.3s;
+    font-weight: 400;
 }
 
 .footer-column ul li a:hover {
-    color: #e7543b;
+    text-decoration: underline;
+    color: #fff;
 }
 
-.footer-bottom {
+.footer-right .social-media a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-right .social-media a:hover {
+    color: #e6533c;
+}
+
+.copyright {
     text-align: center;
-    padding: 15px 0;
-    border-top: 1px solid #333;
+    margin-top: 40px;
     font-size: 14px;
     color: #b5b5b5;
 }
 
-
+/* Responsive Styles for max-width 576px */
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -511,6 +515,28 @@ footer {
         gap: 40px; 
     }
 
+   
+      /* Responsive Styles for max-width 576px */
+
+    .bmi-calculator-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bmi-calculator-chart,
+    .bmi-calculator-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bmi-calculator-form .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    
+
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px; }
@@ -519,4 +545,5 @@ footer {
         flex-direction: column; 
         gap: 40px; 
     }
+}
 }
