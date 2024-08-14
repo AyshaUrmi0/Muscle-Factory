@@ -16,7 +16,6 @@
     .main-content {
         flex-direction: column;
         text-align: start;
-        border: 1px solid white;
     }
 
     .main-content-text, .main-content-img {
@@ -97,10 +96,10 @@
 
     
         .info-left {
-            border-right: none; /* Remove the right border */
-            border-bottom: 1px solid #E6533C; /* Add the bottom border */
+            border-right: none; 
+            border-bottom: 1px solid #E6533C; 
         }
-    }
+    
 
 
     
@@ -116,4 +115,4 @@
         }
 
    
-}
+    }
