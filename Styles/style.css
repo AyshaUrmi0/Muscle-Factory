@@ -315,6 +315,10 @@ height: 580px;
 
 
 }
+.full-bmi{
+    background: #222;
+
+}
 
 .bmi-calculator-content {
     display: flex;
@@ -322,7 +326,7 @@ height: 580px;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background: #222;
+   
 
 }
 

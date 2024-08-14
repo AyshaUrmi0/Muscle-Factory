@@ -64,11 +64,13 @@
     }
 
 
+    .full-bmi{
+        width: 100%;
+    }
 
     .bmi-calculator-content {
         flex-direction: column;
         align-items: center;
-       width: 90%;
     }
 
     .bmi-calculator-header {
