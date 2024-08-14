@@ -1,0 +1,105 @@
+/* Responsive Styles for max-width 576px */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .nav-bar{
+        display: block;
+    }
+    
+
+    .nav-btn {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .main-content-text, .main-content-img {
+        width: 100%;
+    }
+
+    .main-content-img {
+        margin-top: 20px;
+    }
+   
+    .change-habit-text{
+        margin-top: 3.5rem;
+        padding: 40px 40px;
+
+    }
+
+    .change-habit-img{
+       
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px 40px;
+    }
+    .run-extra {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .btn-primary, .btn-primary-download {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px; 
+        box-sizing: border-box; 
+        margin: 0; 
+    }
+
+    .run-text, .run-image {
+        width: 100%; 
+       
+        
+    }
+
+    .row-1, .row-2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px; 
+    }
+
+
+
+    .bmi-calculator-content {
+        flex-direction: column;
+        align-items: center;
+       width: 90%;
+    }
+
+    .bmi-calculator-header {
+        width: 85%;
+        border: 1px solid #fff;
+       
+        padding: 10px;
+    }
+
+    .bmi-calculator-chart,
+    .bmi-calculator-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+   
+    .buttons-bmi .btn-primary{
+        width: 50%;
+    }
+
+
+    
+
+    .footer-container {
+       
+        flex-direction: column;
+        }
+
+        .footer-left, .footer-middle, .footer-right {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+   
+}
