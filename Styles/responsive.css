@@ -16,6 +16,7 @@
     .main-content {
         flex-direction: column;
         text-align: start;
+        border: 1px solid white;
     }
 
     .main-content-text, .main-content-img {

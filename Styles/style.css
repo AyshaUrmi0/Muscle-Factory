@@ -75,6 +75,12 @@ body {
     display: none;
 }
 
+.nav-btn{
+    border:1px solid rgba(255, 255, 255, 0.333);
+    padding: 10px 9px;
+    border-radius: 20px;
+}
+
 /* banner style starts here */
 .main-content {
     display: flex;
@@ -309,9 +315,7 @@ body {
     align-items: center;
     gap: 40px;
     background: #222;
-    margin: 0 auto;
-    border: 1px solid #ab2020;
-   
+    margin: 0 auto;   
 }
 
 .bmi-calculator-chart,
