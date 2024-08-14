@@ -381,6 +381,65 @@ body {
     font-size: 16px;
 }
 
+/* new at gyming style starts here  */
+
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 1px solid #E6533C;
+}
+
+.info-left, .info-right {
+    flex: 1;
+    padding: 20px;
+}
+.info-left{
+    border-right: 1px solid #E6533C;
+}
+
+.info-left h2, .info-right h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.info-left .subtext {
+    color: #888;
+}
+
+.info-left ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-left ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+.info-right p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.info-right strong {
+    font-size: 1.3rem;
+}
+
+
+
+
 
 
 /* footer style starts here */

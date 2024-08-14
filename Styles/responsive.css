@@ -90,6 +90,19 @@
     }
 
 
+    .info-section{
+        flex-direction: column;
+
+    }
+
+    
+        .info-left {
+            border-right: none; /* Remove the right border */
+            border-bottom: 1px solid #E6533C; /* Add the bottom border */
+        }
+    }
+
+
     
 
     .footer-container {
