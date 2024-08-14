@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #000000e4;
+    background:black;
     color: white;
 }
 
@@ -82,16 +82,19 @@ body {
 }
 
 /* banner style starts here */
+
+.apply-bg{
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+}
 .main-content {
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
-    background-image:  linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);;
+  
 }
 
 .main-content-text, .main-content-img {
-    width: 50%;
-    height: auto;
+    width: 45%;
 }
 
 .main-content-text h1 {
@@ -121,13 +124,14 @@ body {
 .main-content-img {
     position: relative;
     width: 50%;
+
     
 }
 
 .main-content-img img {
-    width: 100%;
-    height: auto;
     display: block;
+    width: 349px;
+height: 580px;
 }
 
 .stats {
